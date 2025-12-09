@@ -9,6 +9,10 @@ map("n", "<leader>nh", ":nohl<CR>", opts)
 map("n", "<leader>d", vim.diagnostic.open_float, opts)
 map("n", "<leader>d[", vim.diagnostic.goto_prev, opts)
 map("n", "<leader>d]", vim.diagnostic.goto_next, opts)
+map("n", "<leader>rn", vim.lsp.buf.rename, opts)
+map("n", "<leader>q", ":q<CR>", opts)
+map("n", "<leader>w", ":w<CR>", opts)
+map("n", "<leader>wa", ":wa<CR>", opts)
 
 -- Telescope Keymaps
 map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
